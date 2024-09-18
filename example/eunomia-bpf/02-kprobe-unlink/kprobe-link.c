@@ -28,7 +28,7 @@ int BPF_KPROBE(do_unlinkat, int dfd, struct filename *name)
 }
 
 SEC("kretprobe/do_unlinkat")
-int BPF_KRETPROBE(do_unlinkar, long ret)
+int BPF_KRETPROBE(do_unlinkat_exit, long ret)
 {
     pid_t pid;
 
