@@ -8,6 +8,12 @@ sudo apt install -y clang llvm libbpf-dev
 
 ## 项目本地运行
 
+- 生成本地`vmlinux.h`文件
+
+```shell
+bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
+```
+
 ```shell
 cd example/hello_world
 make run        # 编译并运行程序
