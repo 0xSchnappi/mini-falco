@@ -25,6 +25,7 @@ make clean      # 删除生成文件
 ## BCC
 
 使用[BCC](https://github.com/iovisor/bcc/tree/master)框架开发的路径在example/bcc
+python 开发[示例](https://github.com/iovisor/bcc/blob/master/docs/tutorial_bcc_python_developer.md)
 
 ## Rust ebpf
 
